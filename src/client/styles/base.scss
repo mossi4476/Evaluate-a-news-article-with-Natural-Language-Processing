@@ -22,12 +22,12 @@ $success: #7952b3;
 @import "bootstrap/scss/transitions";
 @import "bootstrap/scss/dropdown";
 @import "bootstrap/scss/nav";
-@import "bootstrap/scss/navbar"; // Requires nav
+@import "bootstrap/scss/navbar"; 
 @import "bootstrap/scss/alert";
 @import "bootstrap/scss/close";
-@import "bootstrap/scss/modal"; // Requires transitions
+@import "bootstrap/scss/modal"; 
 @import "bootstrap/scss/popover";
-@import "bootstrap/scss/offcanvas"; // Requires transitions
+@import "bootstrap/scss/offcanvas"; 
 @import "bootstrap/scss/utilities/api";
 
 // Global Styles
@@ -66,4 +66,3 @@ section {
     margin-top: 20px;
 }
 
-// Custom styles (if any)
