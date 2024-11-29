@@ -1,0 +1,66 @@
+#urlForm {
+    border: 1px solid #ddd;  // Soft border color
+    border-radius: 8px;       // Rounded corners for modern look
+    padding: 2rem;            // Adequate spacing
+    background-color: #f9f9f9; // Light background
+    max-width: 600px;         // Control form width
+    margin: 20px auto;        // Center form
+    position: relative;       // Required for absolute positioning of loader
+    transition: all 0.3s ease;
+
+    &:hover {
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        transform: translateY(-2px);
+    }
+
+    // Input styling
+    input {
+        padding: 12px 20px;
+        width: 100%;
+        font-size: 1rem;
+        margin: 15px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        outline: none;
+        transition: border-color 0.2s ease;
+
+        &:focus {
+            border-color: #007bff;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+        }
+    }
+
+    // Hidden class for elements to be hidden
+    .hidden {
+        display: none;
+    }
+
+    // Loader styling
+    .loader {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(179, 179, 179, 0.6);
+        border-radius: 8px;
+        padding: 2rem;
+        font-size: 2rem;
+        color: #007bff;
+        z-index: 10;
+        display: none;
+    }
+
+    // Build text in bottom right corner
+    .build-text {
+        text-align: right;
+        font-size: 0.875rem;
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+        color: #666;
+        opacity: 0.8;
+    }
+}

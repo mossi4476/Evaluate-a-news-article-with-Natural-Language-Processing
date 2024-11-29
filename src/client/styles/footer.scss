@@ -1,0 +1,28 @@
+footer {
+    background-color: #f8f9fa;  /* Light gray background for the footer */
+    color: #495057;             /* Darker text color for better contrast */
+    text-align: center;         /* Centered text */
+    padding: 1rem 0;            /* Padding for spacing */
+    font-size: 1rem;            /* Standard font size */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #e1e1e1; /* Subtle border to separate from content */
+}
+
+footer span {
+    font-family: 'Roboto Mono', monospace; /* Font styling for the footer text */
+    color: #6c757d;  /* Slightly lighter gray color for the text */
+    font-weight: 400;  /* Regular weight for readability */
+}
+
+footer a {
+    color: #007bff;    /* Blue color for any links in the footer */
+    text-decoration: none;  /* Remove underline from links */
+    transition: color 0.3s ease-in-out;  /* Smooth transition for hover effects */
+}
+
+footer a:hover {
+    color: #0056b3;    /* Darker blue color when hovered */
+    text-decoration: underline;  /* Underline on hover for visual cue */
+}

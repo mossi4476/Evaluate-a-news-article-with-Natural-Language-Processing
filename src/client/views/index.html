@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Article Analyzer - NLP</title>
+
+    <!-- Link to Roboto Mono font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" crossorigin="anonymous" />
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header class="container-fluid shadow-sm">
+        <div class="container d-flex justify-content-center py-3">
+            <span class="fs-4">Evaluate a news article with Natural Language Processing</span>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <section>
+            <!-- URL Submission Form -->
+            <form id="urlForm" class="shadow">
+                <div class="loader" id="loader">
+                    <i class="fa fa-spinner fa-spin spinner"></i>
+                </div>
+                <h5 class="mb-3">Insert a valid URL to enable the Article Analyzer to start its process.</h5>
+                <input id="url" class="form-control form-control-lg mb-3" type="text" name="url" placeholder="Enter URL">
+                <div class="alert alert-danger hidden" role="alert" id="errorMsg">Please insert a valid url!</div>
+                <button id="submitButton" type="submit" class="w-100 btn btn-md btn-primary">Submit</button>
+            </form>
+        </section>
+
+        <section>
+            <strong>Form Results:</strong>
+            <div id="results"></div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="d-flex justify-content-center py-3 my-4 border-top">
+        <span>© 2024 Article Analyzer</span>
+    </footer>
+
+</body>
+
+</html>
