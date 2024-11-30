@@ -1,4 +1,4 @@
-const { checkForUrl } = require("../client/js/urlChecker");
+const { checkForUrl } = require("../src/client/js/urlChecker");
 
 describe('check For Url is Valid', () => {
     test('Text is not URL', () => {
