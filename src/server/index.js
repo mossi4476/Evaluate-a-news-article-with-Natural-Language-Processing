@@ -4,7 +4,7 @@ const cors = require('cors');
 const dotenv = require('dotenv');
 const bodyParser = require('body-parser');
 const path = require('path');
-const fetch = require('node-fetch');  
+const axios = require('axios');  // Use axios instead of fetch
 
 // Initialize environment variables
 dotenv.config();
@@ -33,14 +33,14 @@ const meaningCloud = async (url, key) => {
     const fullUrl = `${meaningCloudApiUrl}?key=${key}&url=${url}&lang=en`;
 
     try {
-        const response = await fetch(fullUrl, {
-            method: "GET",
+        // Use Axios to send GET request
+        const response = await axios.get(fullUrl, {
             headers: {
                 "Content-Type": "application/json"
             }
         });
 
-        const data = await response.json();
+        const data = response.data;  // Axios automatically parses the JSON response
         const { code, msg } = data.status;
 
         console.log(`Response code: ${code}`);

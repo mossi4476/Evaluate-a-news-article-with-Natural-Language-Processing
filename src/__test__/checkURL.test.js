@@ -14,3 +14,12 @@ describe('check For Url is Valid', () => {
     });
 
 });
+
+describe("Testing url validation functionality for legitimate urls", function () {
+    test("it should match the expected URL", function () {
+      const urlRGEX =
+        /^(?:http(s)?:\/\/)?[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\$&'\(\)\*\+,;=.]+$/gm;
+      const urlTest = "http://google.com/"; // Accepted URL
+      expect(urlRGEX.test(urlTest)).toBe(true); // Expecting a match
+    });
+  });
